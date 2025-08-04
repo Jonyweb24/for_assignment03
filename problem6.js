@@ -18,7 +18,23 @@
 
 // নিচের কোড স্নিপেট টি কপি করো ,  প্রোগ্রাম টি কে  কমপ্লিট করো  এবং console.log করে ঠিক যেভাবে আউটুপুট দেখাতে বলা হয়েছে সে আউটপুট দেখাও
 /** Problem 06 :  (Current Salary )  */
-var experience = 30;
-var startingSalary = 45000;
+var experience = 40;
+var startingSalary = 30000;
 //write your code here
 
+
+var  currentSalary = startingSalary;
+
+for ( var i =1; i <= experience; i++){
+   var startingSalary = currentSalary + (currentSalary *5/100);
+   currentSalary += currentSalary*5/100;
+}
+
+// }
+if ( startingSalary > 0  &&  startingSalary <= 10**6 && experience >0 && experience<= 50 ){
+    console.log(startingSalary.toFixed(2));
+    
+  } else{
+    console.log(startingSalary.toFixed(2));
+  }
+    
